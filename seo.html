@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <meta name="keywords" content="Mobile,Mobile phone, cheap mobile ,mobile phone in pakistan, latest mobile,second hand mobile phone,oppo mobile ,techno,samsung mobile ">
+    <style>
+      .dark{
+        background-color: black;
+        color: white;
+      }
+    </style>
+</head>
+<body class="dark">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat praesentium perferendis delectus, labore nobis quis dolor aperiam natus commodi quas magni aliquam sit molestias itaque omnis minus amet doloribus officia!</p>
+    <button>Light</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function()
+        {
+           $("button").click(function()
+           {
+                $("body").toggleClass("dark");
+                if($("body").hasClass("dark"))
+                {
+                    $("button").html("Light");
+                }
+                else{
+                    $("button").html("dark");
+                }
+           })
+        })
+    </script>
+</body>
+</html>
